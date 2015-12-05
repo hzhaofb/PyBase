@@ -1,4 +1,4 @@
-from setuptools import setup
+from distutils.core import setup
 
 setup(name='pybase',
       version='0.1',
@@ -7,5 +7,7 @@ setup(name='pybase',
       author='Sam Curley',
       author_email='CurleySamuel@gmail.com',
       license='Apache License 2.0',
-      packages=['pybase'],
+      packages=['pybase', 'pybase.zk', 'pybase.pb', 'pybase.request',
+                'pybase.region',  'pybase.helpers'],
+      package_dir={'pybase': '.'},
       zip_safe=False)
