@@ -10,5 +10,5 @@ setup(name='pybase',
       packages=['pybase', 'pybase.zk', 'pybase.pb', 'pybase.request',
                 'pybase.region',  'pybase.helpers'],
       package_dir={'pybase': '.'},
-      install_requires=["intervaltree","kazoo","six", "zope.interface"],
+      install_requires=["intervaltree","kazoo","six", "zope.interface", "protobuf"],
       zip_safe=False)
